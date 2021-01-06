@@ -1,0 +1,84 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: The Bds Maneger
+  # version: 1.0.0
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+
+    - title: Get started
+      url: /index.html
+      output: web
+      type: homepage
+
+    - title: API
+      url: /bds-maneger-api_whatis.html
+      output: web
+
+    - title: Bds Maneger
+      url: /bds-maneger_whatis.html
+      output: web
+
+    - title: Pages
+      url: /pages_whatis.html
+      output: web
+      
+  # 
+  - title: Bds Maneger API
+    output: web
+    folderitems:
+
+    - title: Why?
+      url: /bds-maneger-api_whatis.html
+      output: web
+
+# Bds Maneger
+  - title: Bds Maneger
+    output: web
+
+    folderitems:
+    - title: Start
+      url: /bds-maneger_whatis.html
+      output: web
+
+  #
+  - title: Pages (Electron)
+    output: web
+    folderitems:
+
+    - title: What are Pegs
+      url: /pages_whatis.html
+      output: web
+
+    - title: New Pages
+      url: /pages_new_pages.html
+      output: web
+
+    - title: The Javascript
+      url: /pages_strings.html
+      output: web
+
+  # end
+  # - title: Navigation
+  #   output: web
+
+  #   folderitems:
+  #   - title: Sidebar navigation
+  #     url: /home_navigation.html
+  #     output: web
+
+  #   - title: YAML tutorial in the context of Jekyll
+  #     url: /mydoc_yaml_tutorial.html
+  #     output: web
+
+  #   - title: Tags
+  #     url: /mydoc_tags.html
+  #     output: web
+
+  #   - title: Series
+  #     url: /mydoc_series.html
+  #     output: web

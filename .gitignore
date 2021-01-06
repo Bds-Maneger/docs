@@ -1,0 +1,11 @@
+_site/
+.sass-cache/
+.jekyll-metadata
+_web
+.DS_Store
+.idea
+vendor/
+.bundle/
+.dccache
+debug.log
+.jekyll-cache/

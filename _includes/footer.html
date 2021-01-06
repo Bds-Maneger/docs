@@ -1,0 +1,32 @@
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+                    &copy;{{ site.time | date: "%Y"  }} {{site.company_name}}. All rights reserved. <br />
+                    {% if page.last_updated %}<span>Page last updated:</span> {{page.last_updated}}<br/>{% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y"  }} <br />
+                    <p><img src="{{ "images/mcpe_super_smaller.png" }}" alt="Company logo"/></p>
+                    <a style="float: left;margin-top: -110px;" id="Latest_commit" target="Docs Commit"></a>
+                    <div style="display: block;text-align: -webkit-center;">
+                        <a style="font-size: 20px;">Document Contributors</a>
+                        <div id="list_contrib" style="margin-left: 10px;margin-right: 10px;line-height: 3;"></div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // const commit_url = "https://api.github.com/repositories/310890326/commits"
+                const commit_url = "http://127.0.0.1:4000/commmits.json"
+                fetch(commit_url).then(function (response) {return response.json();}).then(function (commit) {
+                    globalThis.commit = commit[0];
+                    document.getElementById('Latest_commit').innerHTML = `Git Message: \"${commit[0].commit.message.replaceAll('\n', '<br>')}\"<br>Git Commit name: \"${commit[0].committer.login}\"`;
+                    document.getElementById('Latest_commit').href = commit[0].html_url;
+                });
+                const contrib_url = "https://api.github.com/repositories/310890326/contributors"
+                // const contrib_url = "http://127.0.0.1:4000/contrib.json"
+                fetch(contrib_url).then(function (response) {return response.json();}).then(function (commit) {
+                    globalThis.contrib = commit;
+                    for (let con = 0; con < contrib.length; con++) {
+                        document.getElementById('list_contrib').innerHTML += `<a href="${contrib[con].html_url}"><img width="4%" src="${contrib[con].avatar_url}" alt="${contrib[con].login}">${contrib[con].login}</a>  `
+                        const element = contrib[con];   
+                    }
+                });
+            </script>
+</footer>

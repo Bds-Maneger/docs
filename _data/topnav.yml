@@ -1,0 +1,37 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  items:
+    - title: Docs Repository
+      external_url: https://github.com/Bds-Maneger/docs
+    # - title: News
+    #   url: /news
+
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: Need help?
+      folderitems:
+      # Bds Maneger
+        - title: Bds Maneger discussions
+          external_url: https://github.com/Bds-Maneger/Bds_Maneger/discussions
+        - title: Bds Maneger issue
+          external_url: https://github.com/Bds-Maneger/Bds_Maneger/issues
+
+      # Bds Maneger API
+        - title: Bds Maneger API discussions
+          external_url: https://github.com/Bds-Maneger/bds_maneger_api/discussions
+        - title: Bds Maneger API issue
+          external_url: https://github.com/Bds-Maneger/bds_maneger_api/issues
+
+
+    - title: Products
+      folderitems:
+        - title: Bds Maneger
+          url: /bds-maneger_whatis.html
+        - title: Bds Maneger API
+          url: /bds-maneger-api_whatis.html
+        - title: Pages (Bds Maneger)
+          url: /pages_whatis.html
