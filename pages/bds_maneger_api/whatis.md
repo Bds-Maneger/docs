@@ -1,8 +1,8 @@
 ---
-title: The Bds-Maneger-api
+title: The Bds Maneger API
 tags: [bds-maneger]
 keywords: search
-summary: "A basic introduction to what Minecraft Bedrock Server Maneger is"
+summary: "Uma api poderosa para utilização rapidas"
 sidebar: home
 permalink: "bds-maneger-api_whatis.html"
 folder: "bds_maneger_api"

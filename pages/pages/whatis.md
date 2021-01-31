@@ -1,8 +1,8 @@
 ---
-title: The Bds-Maneger
+title: Temas
 tags: [pages]
 keywords: search
-summary: "Simply Bds Maneger"
+summary: "temas e mais temas podemos criar uma do zero"
 sidebar: home
 permalink: "pages_whatis.html"
 folder: "pages"

@@ -1,8 +1,8 @@
 ---
-title: The Bds-Maneger-api
+title: API http requests enable
 tags: [bds-maneger]
 keywords: search
-summary: "A basic introduction to what Minecraft Bedrock Server Maneger is"
+summary: "Enable Bds Maneger API http requests"
 sidebar: home
 permalink: "enable_bds_requests.html"
 folder: "bds_maneger_api"
